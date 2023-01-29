@@ -1,0 +1,54 @@
+.shareCard {
+    padding: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 5px;
+
+    .shareTop {
+        display: flex;
+        align-items: center;
+
+        .shareImg {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .shareInput {
+            width: 80%;
+            border: none;
+            margin-left: 10px;
+            font-size: 15px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+    }
+
+    .css-9mgopn-MuiDivider-root {
+        margin-top: 18px;
+        margin-left: 20px;
+        width: 93%;
+        border-bottom-width: 2px;
+    }
+
+    .shareBottom{
+        display: flex;
+        align-items: center;
+        margin-left: 8px;
+
+        .shareOption{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+            font-size: 12px;
+    
+          
+        }
+    }
+
+
+}
