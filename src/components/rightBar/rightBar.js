@@ -1,9 +1,12 @@
 import React from 'react'
+import Notification from '../notification/notification'
 import './rightBar.scss'
 
 const RightBar = () => {
   return (
-    <div className='rightBar'>RightBar</div>
+    <div className='rightBar'>
+    <Notification />
+    </div>
   )
 }
 
