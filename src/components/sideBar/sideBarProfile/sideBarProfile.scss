@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     height: 40px;
-    padding: 0 15px;
+    //padding: 0 15px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     cursor: pointer;
@@ -22,5 +22,16 @@
         font-size: 15px;
         font-weight: 500;
 
+    }
+
+    .onlineStatus{
+        height: 10px;
+        width: 10px;
+        background-color: #0BDA51;
+        border: 1px solid #FFF;
+        border-radius: 50%;
+        position: relative;
+        top: -12px;
+        left: -12px;
     }
 }

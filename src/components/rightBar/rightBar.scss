@@ -1,5 +1,33 @@
-.rightBar{
+.rightBar {
     flex: 4;
     margin-top: 20px;
     margin-right: 20px;
+
+    .notifyDaily {
+        display: flex;
+        align-items: center;
+
+        .giftImg {
+            height: 40px;
+            width: 40px;
+            object-fit: cover;
+        }
+
+        .notifyText {
+            font-size: 14px;
+            margin-left: 10px;
+
+        }
+    }
+
+    .adImg {
+        margin-top: 20px;
+        max-height: 300px;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .rightbarBottom{
+        
+    }
 }
