@@ -5,14 +5,13 @@ import Feed from './../../components/feed/feed';
 import RightBar from './../../components/rightBar/rightBar';
 import './home.scss'
 
-const Home = () => {
+const Home = ({users}) => {
   return (
     <>
-    <Topbar />
     <div className="homeContainer">
-        <SideBar />
-        <Feed />
-        <RightBar />
+        <SideBar users={users} />
+        <Feed users={users} />
+        <RightBar users={users}/>
       </div>
       </>
   )

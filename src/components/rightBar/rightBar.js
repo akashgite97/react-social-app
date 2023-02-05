@@ -1,22 +1,8 @@
 import React from "react";
-import { useState,useEffect } from 'react';
-import axios from 'axios'
 import "./rightBar.scss";
 import SideBarProfile from "../sideBar/sideBarProfile/sideBarProfile";
 
-const RightBar = () => {
-
-  const[users, setUsers] = useState([]);
-
-const getAllUsers = async () =>{
-  const usersData = await axios.get("https://dummyjson.com/users")
-  setUsers(usersData?.data?.users)
-}
-
-useEffect(()=>{
-  getAllUsers()
-},[])
-
+const RightBar = ({users}) => {
 
   return (
     <div className="rightBar">

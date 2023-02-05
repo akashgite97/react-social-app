@@ -16,18 +16,7 @@ import { useState,useEffect } from 'react';
 import axios from 'axios'
 import SideBarProfile from './sideBarProfile/sideBarProfile';
 
-const SideBar = () => {
-
-const[users, setUsers] = useState([]);
-
-const getAllUsers = async () =>{
-  const usersData = await axios.get("https://dummyjson.com/users")
-  setUsers(usersData?.data?.users)
-}
-
-useEffect(()=>{
-  getAllUsers()
-},[])
+const SideBar = ({users}) => {
 
   return (
     <div className='sideBar'>

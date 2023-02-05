@@ -1,15 +1,19 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 import "./sideBarProfile.scss";
+
 
 const SideBarProfile = ({ user, isOnline }) => {
   return (
     <div className="sideBarProfile">
       <img src={user.image} alt="profileImg" className="profileImage" />
       {isOnline && <span className="onlineStatus"></span>}
-      <h3>
+
+      <NavLink to={`/userprofile/${user.id}`} className="profileLink">{user.firstName} {user.lastName}</NavLink>
     
-        {user.firstName} {user.lastName}
-      </h3>
+    
+        
+      
     </div>
   );
 };

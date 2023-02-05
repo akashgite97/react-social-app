@@ -1,0 +1,73 @@
+@mixin flexProperties($justifyContent) {
+  display: flex;
+  align-items: center;
+  justify-content: $justifyContent;
+}
+
+.userContainer {
+  display: flex;
+
+  .userProfileLeft {
+    flex: 2;
+  }
+
+  .userProfileRight {
+    flex: 8;
+
+    .coverImage {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+    }
+
+    .userProfileDetails {
+      position: relative;
+      @include flexProperties("");
+
+      .profileImage {
+        height: 160px;
+        width: 160px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid #FFF;
+        position: absolute;
+        left: 40%;
+        top: -130px;
+      }
+
+
+    }
+
+    .profileText {
+      @include flexProperties(center);
+      margin-left: -40px;
+
+      h2 {
+        margin-top: 50px;
+      }
+
+    }
+
+    .profileDescription {
+      margin-left: -40px;
+      @include flexProperties(center);
+
+    }
+  }
+
+  .profileBottom{
+  width: 100%;
+  display: flex;
+  
+
+  .profBottomLeft{
+    width: 50%;
+    padding: 20px;
+  }
+
+  .profBottomRight{
+    width: 50%;
+  }
+
+  }
+}
