@@ -9,6 +9,8 @@ import TopBar from './components/topbar/topbar';
 import "./App.scss";
 import { useState, useEffect } from "react";
 import axios from 'axios'
+import Login from "./pages/login/login";
+
 
 
 function App() {
@@ -31,6 +33,7 @@ useEffect(()=>{
         <Routes>
           <Route exact path="/" element={<Home users={users} />} />
           <Route exact path="/userProfile/:userId" element={<UserProfile users={users}/>} />
+          <Route exact path="/login" element={<Login/>} />
           <Route path="/*" element={<h4>404 page not found</h4>} />
         </Routes>
       </BrowserRouter>

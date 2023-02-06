@@ -8,6 +8,7 @@ import Button from "@mui/material/Button";
 import "./share.scss";
 
 const Share = () => {
+  
   return (
     <div className="share">
       <div className="shareCard">

@@ -1,0 +1,34 @@
+.loginContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .loginLeft h1 {
+        color: #1873EB;
+    }
+    .loginWrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 40%;
+
+        .loginLeft{
+            margin-right: 20px;
+        }
+        .loginRight{
+            display: flex;
+        .loginForm{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+
+            input{
+                margin-top:010px 0px;
+            }
+          
+        }
+        }
+    }
+    
+}
